@@ -60,7 +60,7 @@ namespace BookingLite
                         sqlCommand.Parameters.AddWithValue("@LastName", lastNameField.Text.Trim());
                         sqlCommand.Parameters.AddWithValue("@Phone", phoneField.Text.Trim());
                         sqlCommand.Parameters.AddWithValue("@Email", emailField.Text.Trim());
-                        sqlCommand.Parameters.AddWithValue("@Address", addressField.Text.Trim());
+                        sqlCommand.Parameters.AddWithValue("@Address", addressField.Text.NullEmpty());
                         sqlCommand.ExecuteNonQuery();
                         MessageBox.Show("Submitted successfully");
                         Clear();
