@@ -1,0 +1,6 @@
+CREATE PROC ViewById
+@Id INT
+AS
+SELECT *
+FROM BookingLite
+WHERE Id = @Id

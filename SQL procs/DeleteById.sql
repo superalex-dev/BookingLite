@@ -1,0 +1,5 @@
+CREATE PROC DeleteById
+@Id INT
+AS
+DELETE FROM BookingLite
+WHERE Id = @Id
